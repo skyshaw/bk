@@ -47,4 +47,5 @@ function search() {
 
 window.onload = function () {
   document.getElementById("searchButton").addEventListener('click', search, false);
+  document.getElementById("search").addEventListener('keydown', search, false);
 }
