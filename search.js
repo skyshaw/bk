@@ -47,5 +47,9 @@ function search() {
 
 window.onload = function () {
   document.getElementById("searchButton").addEventListener('click', search, false);
-  document.getElementById("search").addEventListener('keydown', search, false);
+  document.getElementById("search").addEventListener('keydown', function (event) {
+    if (event.which === 13 || event.keyCode === 13) {
+      search();
+    }
+  }, false);
 }
