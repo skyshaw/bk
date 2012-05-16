@@ -31,6 +31,9 @@ function search() {
         linkers.push(match[1]);
       }
       result = document.getElementById("result");
+      while (result.hasChildNodes()) {
+        result.removeChild(result.lastChild);
+      }
       for (i = 0; i < titles.length; ++i) {
         li = document.createElement("li");
         link = document.createElement("a");
