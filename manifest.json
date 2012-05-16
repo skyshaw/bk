@@ -1,8 +1,8 @@
 {
-  "name": "My First Extension",
+  "name": "BK",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "The first extension that I made.",
+  "description": "Google Bookmarks Search",
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
